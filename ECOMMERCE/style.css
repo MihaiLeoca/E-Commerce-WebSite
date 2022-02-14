@@ -1,0 +1,322 @@
+/*//////// NAVIGATION BAR ////////*/
+
+.header {
+  max-width: 144rem;
+  margin: 0 auto;
+  margin-top: 3.9rem;
+  margin-bottom: 7.6rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.main-nav__left {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.logo {
+  font-size: 1.6rem;
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+
+.main-nav__menu--links {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav__menu--links li {
+  list-style: none;
+}
+
+.main-nav__menu--link:link,
+.main-nav__menu--link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #68707d;
+}
+
+.main-nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.1rem;
+}
+
+.main-nav__right--logo-cart {
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.main-nav__right--logo-cart:hover,
+.main-nav__right--logo-cart:active {
+  color: #000;
+  transform: translateY(-6px);
+}
+
+.main-nav__right--profile-img {
+  height: 5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.main-nav__right--profile-img:hover,
+.main-nav__right--profile-img:active {
+  color: #000;
+  transform: translateY(-6px);
+}
+
+.line-break {
+  height: 0.2rem;
+  background-color: hsl(0, 0%, 84%);
+}
+
+/*//////// SELL-PRODUCT  ////////*/
+
+/* Sell Product first half */
+
+.sell-product {
+  max-width: 144rem;
+  padding: 0rem 7.6rem;
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.sell-product__imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.1rem;
+}
+
+.sell-product__imgs--main {
+  /* height: 50rem; */
+  max-width: 80%;
+  border-radius: 16px;
+}
+
+.sell-product__right-arrow {
+  display: none;
+}
+
+.sell-product__left-arrow {
+  display: none;
+}
+
+.sell-product__imgs--small {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 3.1rem;
+}
+
+.sell-product__imgs--small-imgs {
+  position: relative;
+  max-height: 10.1rem;
+  height: 80%;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.sell-product__imgs--small-img-responsive {
+  min-height: 100%;
+}
+
+.sell-product__imgs--small-imgs:hover,
+.sell-product__imgs--small-imgs:active {
+  border: 2px solid #000000;
+  /* border: 2px solid #e76400; */
+  box-shadow: inset 0 0 0 3px #000;
+  /* box-shadow: inset 0 0 0 3px #e76400; */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.active-photo-container {
+  position: relative;
+}
+
+.active-photo {
+  border: 2px solid #000000;
+  /* border: 2px solid #e76400; */
+  box-shadow: inset 0 0 0 3px #000;
+  /* box-shadow: inset 0 0 0 3px #e76400; */
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Sell Product second half */
+
+.product-details {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.product-details--colored-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ff7d1a;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.product-details--heading-primary {
+  color: hsl(220, 13%, 13%);
+  font-size: 4.8rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 3.9rem;
+}
+.product-details--text {
+  color: #68707dd8;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 3.1rem;
+}
+
+.product-details__price-sale {
+  display: flex;
+  /* align-items: center; */
+  justify-content: start;
+  gap: 2rem;
+}
+.product-details__price-sale--main-price {
+  font-size: 3.1rem;
+  font-weight: 600;
+  color: #1d2025;
+}
+.product-details__price-sale--sale {
+  font-size: 1.8rem;
+  color: #ff7d1a;
+  font-weight: 600;
+  background-color: #ffd8ba;
+  padding: 0.6rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.product-details--crossed-price {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #68707db4;
+  margin-bottom: 3.9rem;
+}
+
+.product-details__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.product-details__cart--amount {
+  display: flex;
+  align-items: center;
+}
+.product-details__cart--amount--minus {
+  background-color: #d2d4d8;
+  padding: 1.8rem 2rem 1.8rem 2rem;
+  border-radius: 8px 0px 0px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.product-details__cart--amount--icon--minus {
+  height: 0.4rem;
+}
+
+.product-details__cart--amount--icon--plus {
+  height: 1.2rem;
+}
+
+.product-details__cart--amount--number {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #1d2025;
+  background-color: #d2d4d8;
+  padding: 1.4rem 3.1rem;
+}
+.product-details__cart--amount--plus {
+  display: flex;
+  background-color: #d2d4d8;
+  padding: 1.7rem 2rem 1.7rem 2rem;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.product-details__cart--amount--btn:hover,
+.product-details__cart--amount--btn:active {
+  background-color: #b4b8be;
+}
+
+.product-details__cart--btn {
+  transition: all 0.3s ease-out;
+}
+
+.product-details__cart--btn--formating {
+  background-color: #ff7d1a;
+}
+
+.product-details__cart--btn--align {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #ff7d1a;
+  padding: 1.4rem 0rem;
+  border-radius: 8px;
+  box-shadow: 0 2rem 3rem #ff7d1a50;
+}
+
+.product-details__cart--btn:hover,
+.product-details__cart--btn:active {
+  /* animation: MoveInTop 0.3s ease-out forwards alternate; */
+  transform: translateY(-1rem);
+  box-shadow: 0 4rem 5rem #ff7d1a50;
+}
+
+/* @keyframes MoveInTop {
+  0% {
+    opacity: 1;
+    box-shadow: 0 2rem 3rem #ff7d1a50;
+  }
+
+  50% {
+    box-shadow: 0 3rem 4rem #ff7d1a50;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+    box-shadow: 0 4rem 5rem #ff7d1a50;
+  }
+} */
+
+.product-details__cart--btn--align--img {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.product-details__cart--btn--align--text {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}

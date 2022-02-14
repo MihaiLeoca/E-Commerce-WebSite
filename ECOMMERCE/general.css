@@ -1,0 +1,59 @@
+/*
+
+#TYping-Scale: 6px, 8px, 10px, 12px, 16px, 20px, 25px, 31px, 39px, 48px, 61px, 76px;
+
+## Colors
+
+### Primary
+
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+
+- Very vark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kumbh+Sans", "Rubik", sans-serif;
+  color: #555;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #68707d;
+}
+
+.grid-2--cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3--cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <div class="main-nav__left">
+          <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+          <img class="logo" src="images/logo.svg" alt="" />
+
+          <div class="main-nav__menu">
+            <ul class="main-nav__menu--links">
+              <li><a class="main-nav__menu--link" href="#">Collections</a></li>
+              <li><a class="main-nav__menu--link" href="#">Men</a></li>
+              <li><a class="main-nav__menu--link" href="#">Women</a></li>
+              <li><a class="main-nav__menu--link" href="#">About</a></li>
+              <li><a class="main-nav__menu--link" href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="main-nav__right">
+          <img
+            class="main-nav__right--logo-cart"
+            src="images/icon-cart.svg"
+            alt="icon-cart"
+          />
+
+          <img
+            class="main-nav__right--profile-img"
+            src="images/image-avatar.png"
+            alt=""
+          />
+        </div>
+      </nav>
+      <div class="line-break"></div>
+    </header>
+
+    <main class="main">
+      <section class="container sell-product grid-2--cols">
+        <div class="sell-product__imgs">
+          <div class="sell-product__imgs--main-arrow">
+            <div class="sell-product__left-arrow">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </div>
+
+            <img
+              src="images/image-product-1.jpg"
+              alt=""
+              class="sell-product__imgs--main"
+            />
+
+            <div class="sell-product__right-arrow">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="sell-product__imgs--small">
+            <div class="sell product__imgs--small-img active-photo-container">
+              <img
+                class="sell-product__imgs--small-imgs active-photo"
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+
+            <img
+              class="sell-product__imgs--small-imgs"
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              class="sell-product__imgs--small-imgs sell-product__imgs--small-img-responsive"
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+            />
+            <img
+              class="sell-product__imgs--small-imgs"
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <p class="product-details--colored-title">Sneaker Company</p>
+          <h1 class="product-details--heading-primary">
+            Fall Limited Edition Sneakers
+          </h1>
+          <p class="product-details--text">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+
+          <div class="product-details__media-querie">
+            <div class="product-details__price-sale">
+              <p class="product-details__price-sale--main-price">$125.00</p>
+              <p class="product-details__price-sale--sale">50%</p>
+            </div>
+            <p class="product-details--crossed-price">$250</p>
+          </div>
+
+          <div class="product-details__cart">
+            <div class="product-details__cart--amount">
+              <div
+                class="product-details__cart--amount--minus product-details__cart--amount--btn"
+              >
+                <img
+                  class="product-details__cart--amount--icon--minus"
+                  src="images/icon-minus.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="product-details__cart--amount--number">
+                <p>1</p>
+              </div>
+
+              <div
+                class="product-details__cart--amount--plus product-details__cart--amount--btn"
+              >
+                <img
+                  class="product-details__cart--amount--icon--plus"
+                  src="images/icon-plus.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="product-details__cart--btn">
+              <a href="#" class="product-details__cart--btn--formating btn">
+                <div class="product-details__cart--btn--align">
+                  <ion-icon
+                    class="product-details__cart--btn--align--img"
+                    name="cart-outline"
+                  ></ion-icon>
+                  <p class="product-details__cart--btn--align--text">
+                    Add to cart
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
